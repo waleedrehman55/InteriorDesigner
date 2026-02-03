@@ -1,0 +1,346 @@
+﻿/* Fonts */
+@font-face {
+  font-family: 'MainFont';
+  src: url('assets/Fonts/fonts/MyFont-Regular.woff2') format('woff2'),
+       url('assets/Fonts/fonts/MyFont-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'HolidayFont';
+  src: url('assets/Fonts/Holiday/Holiday-DYYVD.ttf') format('truetype');
+}
+/* Fonts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    font-size: 10vw;
+}
+h2{
+    font-size: 3vw;
+}
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #ff9800;
+    --font-color: #f6f5e9;
+    --background-color: #f6f5e9;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+/* Navbar */
+nav{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
+    color: var(--font-color);
+}
+.nav-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    font-family: MainFont;
+    font-size: 2.2vw;
+}
+.navmenu{
+    cursor: pointer;
+    border: 1px solid var(--font-color);
+    padding: 5px 10px;
+    border-radius: 100px;
+}
+/* Navbar */
+/* HERO VIDEO */
+.hero-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero-container::before {
+    content: "";                     
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #897f63;  
+    opacity: 0.7;
+    z-index: 1;                    
+}
+.hero-container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* HERO VIDEO */
+/* HERO CONTENT */
+.hero-content{
+    width: 70%;
+    height: auto;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--font-color);
+    z-index: 2;
+}
+.hero-content h1{
+   font-family: MainFont;
+    font-size: 8vw;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+.herosub{
+    font-family: HolidayFont;
+    font-size: 3vw;
+    font-style: italic;
+    margin-top: 20px;
+    margin-top: -3vw;
+    font-weight: bolder;
+}
+.hero-content p{
+    margin-top: 6vw;
+    font-family: monospace;
+    font-size: 1.6vw;
+    line-height: 1.5;
+}
+/* HERO CONTENT */
+
+/* ABOUT PAGE STYLING */
+.about-container{
+    width: 100%;
+    height: auto;
+    padding: 5vw 0.2vw; 
+    background-color: var(--background-color);
+    font-family: 'MainFont', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+}
+.aboutcenter{
+    width: 50%;
+    height: 500px;
+    text-align: center;
+    flex-direction: column;
+    background-color: transparent;
+}
+.aboutboximgs{
+    width: 25%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+.aboutimgcontainer{
+    width: 100%;
+    height: 70%;
+    padding: 0.5vw;
+}
+.aboutimgcontainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.aboutafterimg{
+    width: 60%;
+    height: 1.6vw;
+    background-color: burlywood;
+    margin-top: 1vw;
+}
+.aboutbeforeimg{
+    width: 60%;
+    height: 1.6vw;
+    background-color: burlywood;
+    margin-bottom: 1vw;
+}
+.aboutcenter-content{
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+    background-color: transparent;
+}
+.aboutcenter-content h4{
+    color: #b6623d;
+    font-family: HolidayFont;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 3vw;
+    width: 100%;
+}
+.aboutcenter-content h2{
+    color: #4b3e37;
+    font-family: MainFont;
+    font-size: 5vw;
+    width: 100%;
+    text-align: center;
+}
+.aboutcenter-content p{
+    color: #4b3e37;
+    font-family: monospace;
+    font-size: 1.6vw;
+    text-align: justify;
+    margin-top: 2.4vw;
+}
+/* ABOUT PAGE STYLING */
+
+/* WE DO SECTION STYLING  */
+.wedocontainer{
+    width: 100%;
+    height: auto;
+    padding: 5vw 0.2vw; 
+    position: relative;
+}
+/* Top */
+.wedotop{
+    width: 100%;
+    height: auto;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.wedoimgcontainer{
+    width: 50%;
+    height: 180px;
+    background-color: transparent;
+}
+.wedoimgcontainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.wedocontent{
+    width: 49%;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5vw;
+}
+.wedocontent h4{
+    color: #b6623d;
+    font-family: HolidayFont;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 3vw;
+    width: 100%;
+}
+.wedocontent h2{
+    color: #4b3e37;
+    font-family: MainFont;
+    font-size: 5vw;
+    width: 100%;
+}
+/* Bottom */
+.wedobottom{
+    width: 100%;
+    height: auto;
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
+.wedocard{
+    color: #4b3e37;
+    display: flex;
+    gap: 1.5vw;
+}
+.wedocard h3{
+    font-family: MainFont;
+    font-size: 5vw;
+    margin-top: 0.2vw;
+}
+.wedohighlight{
+    font-size: 1.6vw;
+    font-weight: bold;
+    color: black;
+}
+.wedocard p{
+    font-family: monospace;
+    font-size: 1.4vw;
+}
+.wedostrip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 20px;
+    background-color: #deb887;
+}
+/* WE DO SECTION STYLING  */
+/* SERVICES SECTION STYLING   */
+.servicecontainer{
+    width: 100%;
+    height: auto;
+    padding: 5vw 0.2vw; 
+    background-color: var(--background-color);
+    font-family: 'MainFont', sans-serif;
+    position: relative;
+}
+.servicecards{
+    width: 100%;
+    height: auto;
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 2vw;
+}
+.servicecontainer h4{
+    color: #b6623d;
+    font-family: HolidayFont;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 3vw;
+    width: 100%;
+    text-align: center;
+}
+.servicecontainer h2{
+    color: #4b3e37;
+    font-family: MainFont;
+    font-size: 5vw;
+    width: 100%;
+    text-align: center;
+}
+.servicecardcontainer{
+    width: 32%;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.servicecardcontainer video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.servicestrip{
+    position: absolute;
+    top: 0;
+    right: -36px;
+    width: 20%;
+    height: 20px;
+    background-color: #deb887;
+}
+.servicecardcontainer:hover{
+    
+}
+/* SERVICES SECTION STYLING   */
