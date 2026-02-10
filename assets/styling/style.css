@@ -33,6 +33,34 @@ html, body {
     background-color: var(--background-color);
     color: var(--font-color);
 }
+/* MENUWALL */
+.menuwall {
+    background-color: rgb(248, 143, 73);
+    width: 100%;
+    height: 200vh;
+    z-index: 9999;
+    position: fixed;
+    transform: translateY(-100%);
+    clip-path: url(#menuClip);
+}
+.menucontent{
+    width: 100%;
+    position: absolute;
+    top: 2%;
+    left: 60%;
+    transform: translateX(-50%);
+}
+.menucontent h5{
+    color: #4b3e37;
+    font-weight: bolder;
+    font-size: 90px;
+    font-family: monospace;
+    filter: drop-shadow(1px 2px 5px rgba(27, 27, 27, 0.521));
+    margin: 10px 0;
+    overflow-y: hidden;
+    height: 100px;
+}
+/* MENUWALL */
 /* Navbar */
 nav{
     width: 100%;
@@ -133,7 +161,7 @@ nav{
 }
 .aboutcenter{
     width: 50%;
-    height: 500px;
+    height: auto;
     text-align: center;
     flex-direction: column;
     background-color: transparent;
@@ -300,7 +328,7 @@ nav{
     display: flex;
     justify-content: space-between;
     position: relative;
-    gap: 2vw;
+    gap: 20px;
 }
 .servicecontainer h4{
     color: #b6623d;
@@ -319,7 +347,7 @@ nav{
     text-align: center;
 }
 .servicecardcontainer{
-    width: 32%;
+    width: 300px;
     height: 300px;
     border-radius: 50%;
     position: relative;
@@ -344,3 +372,56 @@ nav{
     
 }
 /* SERVICES SECTION STYLING   */
+
+/* PROJECT SECTION STYLING  */
+ .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 350px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .projectcontainer{
+        width: 100%;
+        height: auto;
+        padding: 5vw 0.2vw; 
+    }
+    .projectcontainer h4{
+        color: #b6623d;
+        font-family: HolidayFont;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 3vw;
+        width: 100%;
+        text-align: center;
+    }  
+    .projectcontainer h2{
+        color: #4b3e37;
+        font-family: MainFont;
+        font-size: 5vw;
+        width: 100%;
+        text-align: center;
+    }
+    .projectssection{
+        width: 100%;
+        height: auto;
+        padding: 5vw 0.2vw; 
+        background-color: #f6f5e9;
+        margin: 0px;
+    }
+/* PROJECT SECTION STYLING  */
